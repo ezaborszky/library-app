@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;1,400&family=Orbitron&family=Playfair+Display:ital,wght@1,800&family=Roboto:ital,wght@0,300;1,100;1,900&display=swap');
+
+html {
+    --s: 82px; /* control the size */
+    --c1: #353535;
+    --c2: #000000;
+    --c3: #8b8b8b;
+    
+    --_g: var(--c3) 0 120deg,#0000 0;
+    background:
+      conic-gradient(from -60deg at 50% calc(100%/3),var(--_g)),
+      conic-gradient(from 120deg at 50% calc(200%/3),var(--_g)),
+      conic-gradient(from  60deg at calc(200%/3),var(--c3) 60deg,var(--c2) 0 120deg,#0000 0),
+      conic-gradient(from 180deg at calc(100%/3),var(--c1) 60deg,var(--_g)),
+      linear-gradient(90deg,var(--c1)   calc(100%/6),var(--c2) 0 50%,
+                            var(--c1) 0 calc(500%/6),var(--c2) 0);
+    background-size: calc(1.732*var(--s)) var(--s);
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .wrapper {
+    
+    margin-top: 5vh;
+    min-width: 80vw;
+    min-height: 85vh;
+    max-width: 80vw;
+    max-height: 85vh;
+    background: #353535;
+    padding: 0rem;
+    border-radius: 20px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 1fr 1fr 9fr;
+  }
+
+  .header {
+    background: #c5c4c4;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "EB Garamond";
+    font-size: 3rem;
+    font-weight: 900;
+    
+  }
+
+
+  #add-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+ 
+    cursor: pointer;
+  }
+
+  #add-button:hover {
+    filter: brightness(1.3)
+  }
