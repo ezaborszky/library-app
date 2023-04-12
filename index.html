@@ -6,38 +6,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Library</title>
 </head>
 <body>
     <main>
+         
         <div class="wrapper">
+          
             <div class="header">Library</div>
-            <div class="add"><button id="add-button"><img src="misc/add-icon.png" alt=""></button></div>
-            <div class="books"></div>
+            <div class="add"><button data-open-modal-button id="add-button"><img src="misc/add-icon.png" alt=""></button></div>
+            <div data-display-area class="books">
+              
+            </div>
         </div>
         <div data-modal class="modal">
             <div class="modal-headline">
                 <div class="modal-title">Add new book</div>
-                <div class="modal-close"><button>&times;</button></div>
+                <div class="modal-close"><button data-close-modal-button>&times;</button></div>
             </div>
             <div class="modal-form">
                 <form data-modal-form id="input-form" action="">
                 <div class="modal-form-grid">
 
                     <label for="author">Author:</label>
-                    <input data-modal-form-input-author  type="text" name="author" id="author">
+                    <input data-modal-form-input-author  type="text" name="author" id="author" value="Author's name">
 
                 </div>
                 <div class="modal-form-grid">
 
                     <label for="title">Title:</label>
-                    <input data-modal-form-input-title  type="text" name="Title" id="title">
+                    <input data-modal-form-input-title  type="text" name="Title" id="title" value="Book title">
 
                 </div>
                 <div class="modal-form-grid">
 
                     <label for="pages">Pages:</label>
-                    <input data-modal-form-input-number  type="number" name="pages" id="pages">
+                    <input data-modal-form-input-pages  type="number" name="pages" id="pages" value="0">
 
                 </div>
                 <div class="modal-form-grid">
@@ -48,9 +52,12 @@
                 </div>
                 
             </form>
-            <button data-modal-form-input-author  form="input-form" type="submit">Add</button>
+            <button data-modal-form-input-submit  form="input-form" type="submit">Add</button>
             </div>
         </div>
     </main>
 </body>
+
+
+
 </html>
