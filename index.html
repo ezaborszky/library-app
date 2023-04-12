@@ -15,6 +15,42 @@
             <div class="add"><button id="add-button"><img src="misc/add-icon.png" alt=""></button></div>
             <div class="books"></div>
         </div>
+        <div data-modal class="modal">
+            <div class="modal-headline">
+                <div class="modal-title">Add new book</div>
+                <div class="modal-close"><button>&times;</button></div>
+            </div>
+            <div class="modal-form">
+                <form data-modal-form id="input-form" action="">
+                <div class="modal-form-grid">
+
+                    <label for="author">Author:</label>
+                    <input data-modal-form-input-author  type="text" name="author" id="author">
+
+                </div>
+                <div class="modal-form-grid">
+
+                    <label for="title">Title:</label>
+                    <input data-modal-form-input-title  type="text" name="Title" id="title">
+
+                </div>
+                <div class="modal-form-grid">
+
+                    <label for="pages">Pages:</label>
+                    <input data-modal-form-input-number  type="number" name="pages" id="pages">
+
+                </div>
+                <div class="modal-form-grid">
+
+                    <label for="is-read">Have you read it:</label>
+                    <input data-modal-form-input-is-read  type="checkbox" name="is-read" id="is-read">
+
+                </div>
+                
+            </form>
+            <button data-modal-form-input-author  form="input-form" type="submit">Add</button>
+            </div>
+        </div>
     </main>
 </body>
 </html>
