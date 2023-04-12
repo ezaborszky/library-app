@@ -150,7 +150,8 @@ html {
     flex-wrap: wrap;
     gap: 15px;
     overflow: scroll;
-  
+    align-items: center;
+    justify-content: center;
   }
 
   .books::-webkit-scrollbar{
@@ -158,8 +159,9 @@ html {
   }
 
   .card {
-    max-height: 30%;
-    max-width: 31%;
+     
+    /* max-height: 30%;
+    max-width: 31%; */
     min-height: 60px;
     min-width: 60px;
     overflow: hidden;
@@ -173,11 +175,14 @@ html {
     font-family: "EB Garamond";
     font-size: 1.15rem;
     font-weight: 800;
-    justify-content: center;
+    align-content: center;
+   
     /* align-items: center; */
     padding: 1rem;
     /* border-right: 6px solid rgb(43, 39, 40); */
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.438));
+    inline-size: 150px;
+    overflow-wrap: break-word;
   }
 
 .card-buttons {
