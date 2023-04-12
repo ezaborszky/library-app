@@ -62,3 +62,84 @@ html {
   #add-button:hover {
     filter: brightness(1.3)
   }
+
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    height: 50%;
+    width: 30%;
+    min-height: 400px;
+    min-width: 400px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    border-radius: 10px;
+    background: #c5c4c4;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.438));
+  
+  }
+
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .modal-headline {
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+     
+    background: rgb(130,19,34);
+  }
+
+  .modal-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "EB Garamond";
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  .modal-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  .modal-close > button {
+    font-family: "EB Garamond";
+    font-size: 2rem;
+    font-weight: 900;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .modal-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .modal-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    font-family: "EB Garamond";
+    font-size: 1.15rem;
+    font-weight: 200;
+  }
+
+  .modal-form > button {
+    width: 20%;
+    height: 10%;
+    font-family: "EB Garamond";
+    font-size: 1.15rem;
+    font-weight: 800;
+    border: none;
+    border-radius: 5px;
+  }
